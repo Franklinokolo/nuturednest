@@ -1,0 +1,201 @@
+ 
+        body {
+            font-family: Poppins;
+            color: #3a3a3a;
+        }
+
+        /* TOP BAR */
+        .top-bar {
+            background: #a79b88;
+            color: #fff;
+            font-size: 14px;
+            padding: 6px 0;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background: #fff;
+        }
+
+        .navbar .btn-book {
+            background: #f4b860;
+            border-radius: 20px;
+            padding: 8px 18px;
+        }
+
+        /* HERO */
+        .hero {
+            background: url('hero.jpg') center/cover no-repeat;
+            height: 90vh;
+            position: relative;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(170, 185, 150, 0.75);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            color: #fff;
+            text-align: center;
+        }
+
+        .hero h1 {
+            letter-spacing: 2px;
+            color: rgba(67, 66, 65, 1);
+            font-size: 32px;
+        }
+
+        .hero p {
+            max-width: 850px;
+            margin: auto;
+            font-size: 24px;
+            font-weight:300;
+            font-family: poppins;
+            text-transform: capitalize;
+        }
+
+        /* BUTTONS */
+        .btn-primary-custom {
+            background: #f4b860;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 12px;
+        }
+
+        .btn-outline-custom {
+            border: 1px solid #fff;
+            color: #fff;
+            background-color: transparent;
+            padding: 10px 20px;
+            border-radius: 12px;
+        }
+
+        /* SECTION TITLE */
+        .section-title {
+            font-weight: 600;
+            letter-spacing: 2px;
+            font-size: 36px;
+        }
+
+        .small {
+            font-size: 16px;
+            text-transform: capitalize;
+        }
+
+        /* CARDS */
+        /* .feature-card {
+            border: 1px solid #c7bfb2;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            font-size: 14px;
+        } */
+
+        .feature-card {
+            border: 1px solid #c7bfb2;
+            border-radius: 12px;
+            text-align: center;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 25px;
+
+        }
+
+        /* GREEN SECTION */
+        .green-section {
+            background: rgba(157, 175, 137, 0.45);
+            color: #2f2f2f;
+        }
+
+        /* SERVICES */
+        .service-item {
+            border-bottom: 1px solid #333;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* ACCORDION CUSTOM STYLE */
+        .custom-accordion {
+            background: transparent;
+            border: none;
+            border-top: 1px solid black;
+            border-radius: none;
+        }
+
+        .accordion-button {
+            background: transparent;
+            box-shadow: none;
+            font-weight: 500;
+            padding: 15px 0;
+        }
+
+        .accordion-button::after {
+            content: "+";
+            font-size: 20px;
+            background-image: none;
+
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            content: "−";
+            background-image: none;
+        }
+
+        .accordion-body {
+            padding: 10px 0 20px;
+            font-size: 14px;
+        }
+
+
+
+        /* REMOVE WHEN CLICKED (ACTIVE) */
+        .accordion-button:not(.collapsed) {
+            background-color: transparent !important;
+            box-shadow: none !important;
+            color: #2f2f2f;
+        }
+
+        /* REMOVE FOCUS OUTLINE */
+        .accordion-button:focus {
+            box-shadow: none !important;
+            outline: none !important;
+        }
+
+        /* REMOVE DEFAULT BORDER */
+
+
+        /* CTA */
+        .cta {
+            padding: 60px 0;
+        }
+
+        /* CONTACT */
+        .contact-section {
+            background: #aeb99a;
+            padding: 60px 0;
+        }
+
+        .form-box {
+            background: #fff;
+            padding: 30px;
+            border-radius: 0px;
+        }
+
+        .form-control {
+            border-radius: 20px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #000;
+            height: 80px;
+        }
+ 
