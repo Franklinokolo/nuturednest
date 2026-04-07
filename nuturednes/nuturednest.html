@@ -15,220 +15,20 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-
-    <style>
-        body {
-            font-family: Poppins;
-            color: #3a3a3a;
-        }
-
-        /* TOP BAR */
-        .top-bar {
-            background: #a79b88;
-            color: #fff;
-            font-size: 14px;
-            padding: 6px 0;
-        }
-
-        /* NAVBAR */
-        .navbar {
-            background: #fff;
-        }
-
-        .navbar .btn-book {
-            background: #f4b860;
-            border-radius: 20px;
-            padding: 8px 18px;
-        }
-
-        /* HERO */
-        .hero {
-            background: url('hero.jpg') center/cover no-repeat;
-            height: 90vh;
-            position: relative;
-        }
-
-        .hero::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: rgba(170, 185, 150, 0.75);
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            color: #fff;
-            text-align: center;
-        }
-
-        .hero h1 {
-            letter-spacing: 2px;
-            color: rgba(67, 66, 65, 1);
-            font-size: 32px;
-        }
-
-        .hero p {
-            max-width: 850px;
-            margin: auto;
-            font-size: 24px;
-            font-weight:300;
-            font-family: poppins;
-            text-transform: capitalize;
-        }
-
-        /* BUTTONS */
-        .btn-primary-custom {
-            background: #f4b860;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 12px;
-        }
-
-        .btn-outline-custom {
-            border: 1px solid #fff;
-            color: #fff;
-            background-color: transparent;
-            padding: 10px 20px;
-            border-radius: 12px;
-        }
-
-        /* SECTION TITLE */
-        .section-title {
-            font-weight: 600;
-            letter-spacing: 2px;
-            font-size: 36px;
-        }
-
-        .small {
-            font-size: 16px;
-            text-transform: capitalize;
-        }
-
-        /* CARDS */
-        /* .feature-card {
-            border: 1px solid #c7bfb2;
-            border-radius: 12px;
-            padding: 25px;
-            text-align: center;
-            font-size: 14px;
-        } */
-
-        .feature-card {
-            border: 1px solid #c7bfb2;
-            border-radius: 12px;
-            text-align: center;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px 25px;
-
-        }
-
-        /* GREEN SECTION */
-        .green-section {
-            background: rgba(157, 175, 137, 0.45);
-            color: #2f2f2f;
-        }
-
-        /* SERVICES */
-        .service-item {
-            border-bottom: 1px solid #333;
-            padding: 10px 0;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        /* ACCORDION CUSTOM STYLE */
-        .custom-accordion {
-            background: transparent;
-            border: none;
-            border-top: 1px solid black;
-            border-radius: none;
-        }
-
-        .accordion-button {
-            background: transparent;
-            box-shadow: none;
-            font-weight: 500;
-            padding: 15px 0;
-        }
-
-        .accordion-button::after {
-            content: "+";
-            font-size: 20px;
-            background-image: none;
-
-        }
-
-        .accordion-button:not(.collapsed)::after {
-            content: "−";
-            background-image: none;
-        }
-
-        .accordion-body {
-            padding: 10px 0 20px;
-            font-size: 14px;
-        }
-
-
-
-        /* REMOVE WHEN CLICKED (ACTIVE) */
-        .accordion-button:not(.collapsed) {
-            background-color: transparent !important;
-            box-shadow: none !important;
-            color: #2f2f2f;
-        }
-
-        /* REMOVE FOCUS OUTLINE */
-        .accordion-button:focus {
-            box-shadow: none !important;
-            outline: none !important;
-        }
-
-        /* REMOVE DEFAULT BORDER */
-
-
-        /* CTA */
-        .cta {
-            padding: 60px 0;
-        }
-
-        /* CONTACT */
-        .contact-section {
-            background: #aeb99a;
-            padding: 60px 0;
-        }
-
-        .form-box {
-            background: #fff;
-            padding: 30px;
-            border-radius: 0px;
-        }
-
-        .form-control {
-            border-radius: 20px;
-        }
-
-        /* FOOTER */
-        footer {
-            background: #000;
-            height: 80px;
-        }
-    </style>
+<link rel="stylesheet" href="./styles.css">
+   
 
 </head>
 
 <body>
 
     <!-- TOP BAR -->
-    <div class="top-bar col-12 text-start px-2">
+    <div class="top-bar col-12 text-start ">
         <span><i class="bi bi-crosshair"></i> Find Our Nearest Office Location</span>
     </div>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg px-4">
+    <nav class="navbar navbar-expand-lg ">
         <a class="navbar-brand fw-bold" href="#"><img src="./logo.png" alt=""></a>
 
         <div class="ms-auto d-flex align-items-center gap-3">
@@ -241,7 +41,7 @@
     <!-- HERO -->
     <section class="hero d-flex align-items-center">
         <div class="container hero-content">
-            <h1>RELIABLE IN-HOME CARE YOU CAN TRUST</h1>
+            <h1>RELIABLE IN-HOME <br>CARE YOU CAN TRUST</h1>
 
             <p class="mt-3">
                 At The Nurtured Nest, we provide dependable, high-quality in-home care designed to support independence,
@@ -250,20 +50,21 @@
             </p>
 
             <div class="mt-4 d-flex justify-content-center gap-3">
-                <button class="btn-primary-custom">Schedule For Free Consultation</button>
-                <button class="btn-outline-custom">Learn More</button>
+                <button class=" btn-rule btn-primary-custom">Schedule For Free Consultation</button>
+                <button class=" btn-rule btn-outline-custom">Learn More</button>
             </div>
         </div>
     </section>
 
     <!-- WHY CHOOSE US -->
-    <section class="py-5 text-center">
-        <div class="container col-md-10">
+    <section class=" text-center section why-choose">
+        <div class="col-12">
+            <p><span class="section-top">Why Choose Us</span></p>
             <p class="section-title">WHY FAMILIES CHOOSE US</p>
 
             <p class="mb-5 small">
-                We understand that inviting care into your home is a big decision. That’s <br>
-                why we focus on what matters most reliability, professionalism, and a <br>genuine connection.
+                We understand that inviting care into your home is a big decision. That’s 
+                why we focus on<br> what matters most reliability, professionalism, and a genuine connection.
             </p>
 
             <div class="row g-4 justify-content-center">
@@ -296,94 +97,112 @@
         </div>
     </section>
 
-    <!-- SERVICES -->
-    <section class="green-section py-5">
-        <div class="container col-md-10">
-            <div class="row align-items-center justify-content-center g-2">
+     <!-- SERVICES -->
+    <section class=" text-center section ">
+        <div class="col-12">
+            <p><span class="section-top">Our Services</span></p>
+            <p class="section-title">WHAT WE OFFER</p>
 
-                <!-- LEFT -->
-                <div class="col-lg-6">
-                    <p class="section-title">SERVICES</p>
-
-                    <p class="small mb-4">
-                        Our services are designed to support daily living while preserving independence and quality of
+            <p class="mb-5 small">
+                 Our services are designed to support daily living while preserving independence and <br>quality of
                         life. Each care plan is customized to meet the unique needs of our clients and their families.
-                    </p>
+            </p>
 
-                    <div class="accordion rounded-0" id="servicesAccordion">
+           
+        </div>
 
-                        <!-- ITEM 1 -->
-                        <div class="accordion-item rounded-0  custom-accordion">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
-                                    data-bs-target="#service1">
-                                    Personal Care
-                                </button>
-                            </h2>
-                            <div id="service1" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
-                                <div class="accordion-body">
-                                    Assistance with bathing, grooming, dressing, and daily hygiene to maintain dignity
-                                    and comfort.
-                                </div>
-                            </div>
+        <div class="row align-items-center">
+
+        <!-- Image -->
+        <div class="col-md-6 mb-4 mb-md-0">
+            <img id="serviceImage" src="./service.png" class="service-img" alt="">
+        </div>
+
+        <!-- Accordion -->
+        <div class="col-md-6">
+            <div class="accordion" id="servicesAccordion">
+
+                <!-- Personal Care -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#one"
+                            onclick="changeImage('img1.jpg')">
+                            Personal Care
+                        </button>
+                    </h2>
+                    <div id="one" data-bs-parent="#servicesAccordion" class="accordion-collapse">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Bathing, grooming, hygiene</li>
+                                <li>Dressing assistance</li>
+                                <li>Mobility support</li>
+                            </ul>
                         </div>
-
-                        <!-- ITEM 2 -->
-                        <div class="accordion-item rounded-0 custom-accordion">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
-                                    data-bs-target="#service2">
-                                    Companion Care
-                                </button>
-                            </h2>
-                            <div id="service2" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
-                                <div class="accordion-body">
-                                    Emotional support, conversation, and companionship to improve overall well-being.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- ITEM 3 -->
-                        <div class="accordion-item rounded-0 custom-accordion">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
-                                    data-bs-target="#service3">
-                                    Respite Care
-                                </button>
-                            </h2>
-                            <div id="service3" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
-                                <div class="accordion-body">
-                                    Temporary relief for family caregivers while ensuring continued quality care.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- ITEM 4 -->
-                        <div class="accordion-item rounded-0 custom-accordion">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
-                                    data-bs-target="#service4">
-                                    Post-Hospital Support
-                                </button>
-                            </h2>
-                            <div id="service4" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
-                                <div class="accordion-body">
-                                    Recovery support including medication reminders and mobility assistance.
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
 
-                <!-- RIGHT IMAGE -->
-                <div class="col-lg-6 text-center">
-                    <img src="./service.png" class="img-fluid rounded">
+                <!-- Companion Care -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#two"
+                            onclick="changeImage('img2.jpg')">
+                            Companion Care
+                        </button>
+                    </h2>
+                    <div id="two" data-bs-parent="#servicesAccordion" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Emotional support and companionship.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Respite Care -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#three"
+                            onclick="changeImage('img3.jpg')">
+                            Respite Care
+                        </button>
+                    </h2>
+                    <div id="three" data-bs-parent="#servicesAccordion" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Temporary relief for caregivers.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post Hospital -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#four"
+                            onclick="changeImage('img4.jpg')">
+                            Post-Hospital Support
+                        </button>
+                    </h2>
+                    <div id="four" data-bs-parent="#servicesAccordion" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Recovery support after hospital discharge.
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </div>
     </section>
+
+   
     <!-- CTA -->
     <section class="cta text-start">
         <div class="container col-md-10">

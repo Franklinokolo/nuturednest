@@ -1,7 +1,16 @@
  
+        @font-face {
+            font-family: 'saint carell';
+            src: url(./saint_carell/SaintCarellClean_PERSONAL_USE_ONLY.otf);
+            text-transform: lowercase;
+        }
         body {
             font-family: Poppins;
             color: #3a3a3a;
+        }
+
+        .why-choose{
+            background-color: #F0F1EF;
         }
 
         /* TOP BAR */
@@ -9,18 +18,19 @@
             background: #a79b88;
             color: #fff;
             font-size: 14px;
-            padding: 6px 0;
+            padding: 6px 100px;
         }
 
         /* NAVBAR */
         .navbar {
             background: #fff;
+            padding:5px 100px;
         }
 
         .navbar .btn-book {
             background: #f4b860;
-            border-radius: 20px;
-            padding: 8px 18px;
+            border-radius: 16px;
+            padding: 12px 26px;
         }
 
         /* HERO */
@@ -28,6 +38,7 @@
             background: url('hero.jpg') center/cover no-repeat;
             height: 90vh;
             position: relative;
+          
         }
 
         .hero::before {
@@ -45,16 +56,17 @@
         }
 
         .hero h1 {
-            letter-spacing: 2px;
-            color: rgba(67, 66, 65, 1);
-            font-size: 32px;
+            
+            color: rgb(255, 255, 255);
+            font-size: 50px;
+            font-family: 'saint carell';
         }
 
         .hero p {
-            max-width: 850px;
+            max-width: 860px;
             margin: auto;
-            font-size: 24px;
-            font-weight:300;
+            font-size: 20px;
+            font-weight:lighter;
             font-family: poppins;
             text-transform: capitalize;
         }
@@ -63,23 +75,43 @@
         .btn-primary-custom {
             background: #f4b860;
             border: none;
-            padding: 10px 20px;
-            border-radius: 12px;
+
+        }
+
+        .btn-rule{
+            padding: 16px 26px;
+            font-size: 16px;
+            border-radius: 16px;
         }
 
         .btn-outline-custom {
             border: 1px solid #fff;
             color: #fff;
             background-color: transparent;
-            padding: 10px 20px;
-            border-radius: 12px;
+           
         }
 
+
         /* SECTION TITLE */
+
+        .section{
+            padding: 98px 107px;
+        }
+        .section-top{
+            border: 1px solid black;
+            font-size: 20px;
+            background-color: transparent;
+            color: black;
+            border-radius: 100px;
+            padding: 8px 20px;
+           
+        }
         .section-title {
-            font-weight: 600;
-            letter-spacing: 2px;
+            font-family: 'saint carell';
+            font-weight: normal;
             font-size: 36px;
+            line-height: 52px;
+            letter-spacing: 5px;
         }
 
         .small {
@@ -123,7 +155,7 @@
         }
 
         /* ACCORDION CUSTOM STYLE */
-        .custom-accordion {
+        /* .custom-accordion {
             background: transparent;
             border: none;
             border-top: 1px solid black;
@@ -152,24 +184,63 @@
         .accordion-body {
             padding: 10px 0 20px;
             font-size: 14px;
-        }
+        } */
 
 
 
-        /* REMOVE WHEN CLICKED (ACTIVE) */
+        /* REMOVE WHEN CLICKED (ACTIVE)
         .accordion-button:not(.collapsed) {
             background-color: transparent !important;
             box-shadow: none !important;
             color: #2f2f2f;
         }
 
-        /* REMOVE FOCUS OUTLINE */
+        /* REMOVE FOCUS OUTLINE 
         .accordion-button:focus {
             box-shadow: none !important;
             outline: none !important;
-        }
+        } */
 
         /* REMOVE DEFAULT BORDER */
+
+
+        .service-img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    height: 350px;
+    transition: 0.4s ease;
+}
+
+.accordion-button {
+    background: transparent;
+    font-weight: 600;
+    font-size: 18px;
+    box-shadow: none !important;
+    border: none;
+    border-bottom: 1px solid #333;
+}
+
+.accordion-button:last-child {
+    border: none !important;
+}
+.accordion-button:not(.collapsed) {
+    background: #8a9b7a;
+    color: #fff;
+    border: none;
+    border-radius: 16px 16px 0 0 !important;
+}
+
+.accordion-item {
+    border: none;
+    margin-bottom: 10px;
+}
+
+.accordion-body {
+    background: #8a9b7a;
+    color: #fff;
+    border-radius: 0 0 15px 15px;
+}
 
 
         /* CTA */
