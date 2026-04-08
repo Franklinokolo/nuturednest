@@ -28,7 +28,7 @@
         }
 
         .navbar .btn-book {
-            background: #f4b860;
+            background: #FFD08C;
             border-radius: 16px;
             padding: 12px 26px;
         }
@@ -73,7 +73,7 @@
 
         /* BUTTONS */
         .btn-primary-custom {
-            background: #f4b860;
+            background: #FFD08C;
             border: none;
 
         }
@@ -119,25 +119,27 @@
             text-transform: capitalize;
         }
 
-        /* CARDS */
-        /* .feature-card {
-            border: 1px solid #c7bfb2;
-            border-radius: 12px;
-            padding: 25px;
-            text-align: center;
-            font-size: 14px;
-        } */
 
         .feature-card {
-            border: 1px solid #c7bfb2;
-            border-radius: 12px;
+            border:none;
+            border-radius: 16px;
             text-align: center;
-
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 20px 25px;
+            padding: 16px;
 
+        }
+
+        .feature-card p {
+            font-size: 14px;
+            font-weight: 500;
+            margin: 0;
+        }
+        .feature-card img {
+            width: 100%;
+            margin-bottom: 5px;
+            border-radius: 16px;
         }
 
         /* GREEN SECTION */
@@ -146,65 +148,8 @@
             color: #2f2f2f;
         }
 
-        /* SERVICES */
-        .service-item {
-            border-bottom: 1px solid #333;
-            padding: 10px 0;
-            display: flex;
-            justify-content: space-between;
-        }
 
-        /* ACCORDION CUSTOM STYLE */
-        /* .custom-accordion {
-            background: transparent;
-            border: none;
-            border-top: 1px solid black;
-            border-radius: none;
-        }
-
-        .accordion-button {
-            background: transparent;
-            box-shadow: none;
-            font-weight: 500;
-            padding: 15px 0;
-        }
-
-        .accordion-button::after {
-            content: "+";
-            font-size: 20px;
-            background-image: none;
-
-        }
-
-        .accordion-button:not(.collapsed)::after {
-            content: "−";
-            background-image: none;
-        }
-
-        .accordion-body {
-            padding: 10px 0 20px;
-            font-size: 14px;
-        } */
-
-
-
-        /* REMOVE WHEN CLICKED (ACTIVE)
-        .accordion-button:not(.collapsed) {
-            background-color: transparent !important;
-            box-shadow: none !important;
-            color: #2f2f2f;
-        }
-
-        /* REMOVE FOCUS OUTLINE 
-        .accordion-button:focus {
-            box-shadow: none !important;
-            outline: none !important;
-        } */
-
-        /* REMOVE DEFAULT BORDER */
-
-
-        .service-img {
+    .service-img {
     width: 100%;
     border-radius: 20px;
     object-fit: cover;
@@ -218,12 +163,9 @@
     font-size: 18px;
     box-shadow: none !important;
     border: none;
-    border-bottom: 1px solid #333;
+    
 }
 
-.accordion-button:last-child {
-    border: none !important;
-}
 .accordion-button:not(.collapsed) {
     background: #8a9b7a;
     color: #fff;
@@ -231,14 +173,23 @@
     border-radius: 16px 16px 0 0 !important;
 }
 
-.accordion-item {
-    border: none;
+.accordion-item:not(:last-child) {
+    border-bottom: 1px solid #333;
+}
+
+.accordion-item{
+    border:none;
     margin-bottom: 10px;
 }
+
+
 
 .accordion-body {
     background: #8a9b7a;
     color: #fff;
+    text-align:start;
+    font-size:14px;
+    font-weight: 300;
     border-radius: 0 0 15px 15px;
 }
 
@@ -248,6 +199,31 @@
             padding: 60px 0;
         }
 
+        .cta-panel {
+            /* background: #aeb99a; */
+            background-image: url(./cta-bg.png);
+            color:white;
+            text-align:center;
+            padding: 40px;
+            border-radius: 24px;
+        }
+        .cta-title{
+            font-family:poppins;
+            text-transform: sentence-case;
+            font-weight: bold;
+            padding: 0px 20px;
+            font-size: 32px;
+
+            line-height: 52px;
+        }
+        .cta-subtitle{
+            font-family:poppins;
+            text-transform: sentence-case;
+            padding: 0px 20px;
+            font-weight:normal;
+            font-size: 20px;
+            line-height: 28px;
+        }
         /* CONTACT */
         .contact-section {
             background: #aeb99a;
