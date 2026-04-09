@@ -22,10 +22,21 @@
             padding: 6px 100px;
         }
 
+        .top-bar .location{
+            color:#fff;
+            text-decoration:none;
+            align-items:center;
+
+        }
+
         /* NAVBAR */
         .navbar {
             background: #fff;
             padding:5px 100px;
+        }
+
+        .nav-link:hover{
+            color: #8a9b7a;
         }
 
         .navbar .btn-book {
@@ -34,11 +45,17 @@
             padding: 12px 26px;
         }
 
+        .btn-book:hover {
+            background-color: #f0a400df;
+            color: #fff;
+        }
+
         /* HERO */
         .hero {
             background: url('bg-image.png') center/cover no-repeat;
             background-color: #9DAF89;
             background-position: top;
+            background-blend-mode:overlay;
             height: 90vh;
             position: relative;
           
@@ -97,6 +114,11 @@
             color: #fff;
             background-color: transparent;
            
+        }
+
+        .btn-outline-custom:hover{
+            background-color: #fff;
+            color:rgb(0, 0, 0)
         }
 
 
@@ -384,6 +406,109 @@
 .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+
+.icon-wrapper {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 40px;
+  transition: color 0.3s ease;
+}
+
+/* First icon animation */
+.icon-1 {
+  animation: zoomSwap1 1.5s infinite;
+}
+
+/* Second icon animation (delayed) */
+.icon-2 {
+  animation: zoomSwap2 1.5s infinite;
+}
+
+/* Keyframes */
+@keyframes zoomSwap1 {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    color: #f50505;
+  }
+  40% {
+    transform: scale(1.8);
+    opacity: 0;
+    color: #ffffff;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.icon-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+}
+
+/* First icon */
+.icon-1 {
+  animation: zoomSwap1 1.5s infinite;
+}
+
+/* Second icon */
+.icon-2 {
+  animation: zoomSwap2 1.5s infinite;
+}
+
+/* Animations */
+@keyframes zoomSwap1 {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    color: #000;
+  }
+  40% {
+    transform: scale(1.8);
+    opacity: 0;
+    color: #8a9b7a;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes zoomSwap2 {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+    color: #8a9b7a;
+  }
+  40% {
+    transform: scale(1);
+    opacity: 1;
+    color: #000;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+    color: #8a9b7a;
+  }
 }
 
 /* mobile view design */
