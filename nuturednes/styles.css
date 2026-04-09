@@ -391,6 +391,14 @@
             text-align:left;
         }
 
+
+/* titlehandling */
+.small{
+    max-width: 800px;
+    margin:auto;
+    text-align:center;
+}
+
 /* About Us page */
 .about-text{
     text-align:justify;
