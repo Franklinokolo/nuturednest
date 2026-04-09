@@ -1,28 +1,19 @@
-let item1 = document.getElementById("headingOne");
-let item2 = document.getElementById("headingTwo");
-let item3 = document.getElementById("headingThree");
-let item4 = document.getElementById("headingFour");
+const image = document.getElementById("serviceImage");
 
+const items = {
+  headingOne: './service.png',
+  headingTwo: './logo.png',
+  headingThree: './service.png',
+  headingFour: './logo.png'
+};
 
-let image  = document.getElementById("serviceImage");
+Object.keys(items).forEach(id => {
+  const el = document.getElementById(id);
 
-item1.addEventListener("click", function() { 
-    console.log("Heading One clicked");
-    image.src = './service.png';
-})
-
-item2.addEventListener("click", function() { 
-    console.log("Heading Two clicked");
-    image.src = './logo.png';
-})
-
-item3.addEventListener("click", function() { 
-    console.log("Heading Three clicked");
-    image.src = './service.png';
-})
-
-item4.addEventListener("click", function() { 
-    console.log("Heading Four clicked");
-    image.src = './logo.png';
-})
-
+  if (el) {
+    el.addEventListener("click", () => {
+      console.log(`${id} clicked`);
+      image.src = items[id];
+    });
+  }
+});
