@@ -591,7 +591,7 @@ footer .copyright{
 
 
 /* smaller devices */
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
     .hero h1 {
         font-size: 24px;
     }
@@ -612,4 +612,4 @@ footer .copyright{
     .feature-card p {
         font-size: 12px;
     }
-}
+} */
