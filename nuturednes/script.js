@@ -2,7 +2,7 @@ const image = document.getElementById("serviceImage");
 
 const items = {
   headingOne: './service.png',
-  headingTwo: './logo.png',
+  headingTwo: './service2.png',
   headingThree: './service.png',
   headingFour: './logo.png'
 };

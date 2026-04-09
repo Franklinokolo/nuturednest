@@ -36,18 +36,20 @@
 
         /* HERO */
         .hero {
-            background: url('hero.jpg') center/cover no-repeat;
+            background: url('bg-image.png') center/cover no-repeat;
+            background-color: #9DAF89;
+            background-position: top;
             height: 90vh;
             position: relative;
           
         }
 
-        .hero::before {
+        /* .hero::before {
             content: "";
             position: absolute;
             inset: 0;
-            background: rgba(170, 185, 150, 0.75);
-        }
+            background: 9DAF89;
+        } */
 
         .hero-content {
             position: relative;
@@ -77,6 +79,11 @@
             background: #FFD08C;
             border: none;
 
+        }
+
+        .btn-primary-custom:hover {
+            background-color: #f0a400df;
+            color: #fff;
         }
 
         .btn-rule{
@@ -365,6 +372,18 @@
 /* About Us page */
 .about-text{
     text-align:justify;
+}
+
+
+/* ANIMATION EFFECTS */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* hover effect */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
 }
 
 /* mobile view design */
