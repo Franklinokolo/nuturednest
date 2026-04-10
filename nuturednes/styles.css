@@ -187,9 +187,34 @@
     transition: 0.4s ease;
 }
 
+/* changing default icon for accordion */
+.accordion-button::after{
+    display:none;
+}
+
+.accordion-icon {
+    font-size: 16px;
+    transition: transform 0.3s ease;
+    background-color: #FFD08C;
+    padding: 1px 4px;
+    border-radius: 50%;
+}
+
+.dcolor{
+    color: #8a9b7a;
+}
+.dfont{
+      font-weight: normal;
+}
+.opfont{
+    font-weight: bold;
+}
+.opcolor{
+    color: #fff;
+}
+
 .accordion-button {
     background: transparent;
-    font-weight: 600;
     font-size: 18px;
     box-shadow: none !important;
     border: none;
@@ -208,13 +233,11 @@
     color:#FFD08C;
 }
 
-.accordion-item:not(:last-child) {
+.accordion-button.collapsed:last-child {
     border-bottom: 1px solid #333;
 }
 
-.accordion-item:not(.collapsed) {
-    border-bottom: none;
-}   
+
 
 .accordion-item{
     border:none;
@@ -340,20 +363,26 @@
 
         .contact-info-pane {
             font-size: 16px;
+            font-weight:300;
             color: #fff;
             display: flex;
             align-items: center;
             margin-left: 20px;
+            
+        }
+
+        .contact-context{
+            padding: 0px 20px;
         }
 
         .contact-icon i{
-            color: #FFD08C;
+            color:#ffffff;
             margin-right: 10px;
             font-weight:bold;
             width: 32px;
             height: 32px;
             border-width:2px;
-            background-color:#fff;
+            background-color:#FFD08C;
             padding:8px 12px;
             border-radius: 50%;
         }
@@ -374,15 +403,15 @@
         }
 
         .footer-icon{
-            color:#fff;
-            background-color:#FFD08C;
+            color:#9DAF89;
+            background-color:rgb(255, 255, 254);
             padding: 8px 12px;
             border-radius:50%;
         }
 
         .footer-icon:hover{
-            color:#FFD08C;
-            background-color:#fff;
+            color:#ffffff;
+            background-color:#90A27C;
             padding: 8px 12px;
             border-radius:50%;
         }

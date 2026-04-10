@@ -17,3 +17,52 @@ Object.keys(items).forEach(id => {
     });
   }
 });
+
+
+
+// to change the icon of the accordion when it is clicked
+// const accordionButtons = document.querySelectorAll(".accordion-button");
+
+// accordionButtons.forEach(button => {
+//   button.addEventListener("click", () => {
+//     const icon = button.querySelector(".accordion-icon");
+//     if (icon) {
+//       if (icon.classList.contains("bi-plus")) {
+//         icon.classList.remove("bi-plus");
+//         icon.classList.add("bi-dash");
+//       } else {
+//         icon.classList.remove("bi-dash");
+//         icon.classList.add("bi-plus");
+//       }
+//     }
+//   });
+// })
+
+
+// when the accordion is opened, change the icon to a dash and when it is closed, change it back to a plus
+const accordionItems = document.querySelectorAll(".accordion-item");
+
+accordionItems.forEach(item => {
+  item.addEventListener("show.bs.collapse", () => {
+    const button = item.querySelector(".accordion-button");
+    const icon = button.querySelector(".accordion-icon");
+    if (icon) {
+      icon.classList.remove("bi-plus");
+      icon.classList.add("bi-dash");
+      // change the color of the icon to red
+      icon.style.color = "#8a9b7a";
+      button.style.fontWeight = "normal";
+    }
+  });
+
+  item.addEventListener("hide.bs.collapse", () => {
+    const button = item.querySelector(".accordion-button");
+    const icon = button.querySelector(".accordion-icon");
+    if (icon) {
+      icon.classList.remove("bi-dash");
+      icon.classList.add("bi-plus");
+      icon.style.color = "#fff";
+      button.style.fontWeight = "bold";
+    }
+  });
+});
