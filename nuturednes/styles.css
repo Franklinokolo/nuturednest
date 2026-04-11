@@ -35,6 +35,9 @@
             padding:5px 100px;
         }
 
+        .navbar-collapse{
+            justify-content:end;
+        }
         .nav-link:hover{
             color: #8a9b7a;
         }
@@ -99,7 +102,7 @@
         }
 
         .btn-primary-custom:hover {
-            background-color: #f0a400df;
+            background-color: rgba(240, 164, 0, 0.883);
             color: #fff;
         }
 
@@ -256,6 +259,17 @@
 }
 
 
+
+
+/* SERVICE CARDS */
+.service-card{
+    background-color:#fff;
+}
+
+.service-title{
+    font-weight:bold;
+}
+
 /* TESTIMONIALS */
 .testimonial-card {
     border: none;
@@ -263,9 +277,11 @@
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.card-bg-1{
+.active{
     background: linear-gradient(rgba(157, 175, 137, 1), rgba(80, 97, 61, 1));
+    color:white;
 }
+
 .card-bg-2{
     background: #ffffff;
 }
