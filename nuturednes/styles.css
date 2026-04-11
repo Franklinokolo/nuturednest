@@ -268,6 +268,17 @@
 
 .service-title{
     font-weight:bold;
+    font-size:20px;
+}
+
+/* the service btn always down and aligned even when the sevice cards dont have same content all the button should have their btn at same level*/
+ .service-btn{
+    position:absolute;
+    bottom: 8px;
+} 
+
+.sbtn-pane{
+    margin-top:1.5em;
 }
 
 /* TESTIMONIALS */
@@ -276,6 +287,10 @@
     border-radius: 16px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+.stars{
+    font-size: 12px;
 }
 .active{
     background: linear-gradient(rgba(157, 175, 137, 1), rgba(80, 97, 61, 1));
@@ -286,8 +301,10 @@
     background: #ffffff;
 }
 .quote {
-    font-size: 24px;
+    font-size: 32px;
+    z-index:-1;
 }
+
 .client-review{
     font-size: 16px;
     font-weight: 300;   
@@ -295,9 +312,7 @@
 .client-style-1{
     color: #90A27C;
 }
-.client-style-2{
-    color: #ffffff;
-}
+
 .client-name{
     font-weight: 600;
 }
@@ -451,6 +466,13 @@
     text-align:justify;
 }
 
+
+/* Careers page */
+.career-form-pane{
+    background-color: #4d5542;
+    padding: 20px;
+    border-radius: 10px;
+}
 
 /* ANIMATION EFFECTS */
 .card {
