@@ -42,6 +42,14 @@
      padding: 5px 100px;
  }
 
+ .navbar-toggler, 
+ .navbar-toggler:active, 
+ .navbar-toggler:focus,
+ .navbar-toggler:hover
+  {
+     border: none;
+ }
+
  .navbar-collapse {
      justify-content: end;
  }
@@ -200,80 +208,9 @@
      transition: 0.4s ease;
  }
 
- /* changing default icon for accordion */
- .accordion-button::after {
-     display: none;
- }
+ 
 
- .accordion-icon {
-     font-size: 16px;
-     transition: transform 0.3s ease;
-     background-color: #FFD08C;
-     padding: 1px 4px;
-     border-radius: 50%;
- }
-
- .dcolor {
-     color: #8a9b7a;
- }
-
- .dfont {
-     font-weight: normal;
- }
-
- .opfont {
-     font-weight: bold;
- }
-
- .opcolor {
-     color: #fff;
- }
-
- .accordion-button {
-     background: transparent;
-     font-size: 18px;
-     box-shadow: none !important;
-     border: none;
-
- }
-
- .accordion-button:not(.collapsed) {
-     background: #8a9b7a;
-     color: #fff;
-     border: none;
-     border-radius: 16px 16px 0 0 !important;
-
- }
-
- .accordion-button-color {
-     color: #FFD08C;
- }
-
- .accordion-button.collapsed:last-child {
-     border-bottom: 1px solid rgba(5, 5, 5, 0.25);
- }
-
-
-
- .accordion-item {
-     border: none;
-     margin-bottom: 10px;
- }
-
-
-
- .accordion-body {
-     background: #606952;
-     color: #fff;
-     text-align: start;
-     font-size: 14px;
-     font-weight: 300;
-     border-radius: 0 0 15px 15px;
- }
-
-
-
-
+ 
  /* SERVICE CARDS */
  .service-card {
      background-color: #fff;
@@ -295,7 +232,8 @@
  .service-btn {
      position: absolute;
      bottom: 24px;
-     width: 85%;
+     left:0px;
+     width: 100%;
  }
 
  .sbtn-pane {
@@ -466,7 +404,7 @@
  /* FOOTER */
  footer {
      border-top: 2px solid #fff;
-     background: #9DAF89;
+     background: #000000;
      
     
  }
@@ -477,7 +415,8 @@
 
  .copyright-pane{
     background-color: #606952;
-    padding: 20px 0px 20px 100px;;
+    padding: 16px 100px;
+    
  }
  .social-icons {
      text-align: end;
@@ -489,6 +428,8 @@
      padding: 8px 12px;
      border-radius: 50%;
  }
+
+ .footer-text{color:#dedede97}
 
  .footer-icon:hover {
      color: #ffffff;
@@ -507,7 +448,7 @@
 
 .footer-link:hover{
     color: #FFD08C;
-
+}
  .copyright {
      text-align: left;
  }
@@ -525,14 +466,22 @@
      text-align: justify;
  }
 
- .about-img {
-     width: 100%;
-     height: 400px;
-     object-fit: cover;
-     border-radius: 12px;
+
+
+ .about{
+    display: flex;
  }
 
- */
+
+
+.img-holder{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100%;
+   
+}
+ 
 
  /* Careers page */
  .career-form-pane {
@@ -664,7 +613,7 @@
          height: auto;
      }
 
-     .img-side{
+     .img-holder{
         display: none;
      }
 
@@ -685,13 +634,16 @@
      .contact-info-pane {
          padding: 16px 25px;
      }
+     .about-text {
+         padding: 0px 20px;
+     }
 
      .form-pane {
          padding: 20px 20px;
      }
 
-     footer {
-         padding: 40px 20px;
+     .footer-pane {
+         padding: 40px 40px;
      }
 
      footer .social-icons {
@@ -699,21 +651,32 @@
 
      }
 
-     footer .copyright {
-         text-align: center;
+    .copyright-pane {
+        padding: 16px 40px;
      }
+
+     
 
 
 
  }
 
+ @media screen and (max-width:390px) {
+    .hero h1 {
+        font-size: 40px;
+    }
+ }
+
 
  /* smaller devices */
- @media (max-width: 375px) {
+ @media screen and (max-width: 375px) {
      .hero h1 {
          font-size: 32px;
      }
 
+     .img-holder {
+         display: none;
+     }
      .hero p {
          font-size: 14px;
      }
@@ -729,5 +692,9 @@
 
      .feature-card p {
          font-size: 12px;
+     }
+
+     .about-text{
+        padding: 0px 10px;
      }
  }
