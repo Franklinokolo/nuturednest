@@ -47,7 +47,7 @@
  }
 
  .nav-link:hover {
-     color: #8a9b7a;
+     color: var(--accent-color);
  }
 
  .navbar-brand img {
@@ -467,9 +467,18 @@
  footer {
      border-top: 2px solid #fff;
      background: #9DAF89;
-     padding: 16px 100px;
+     
+    
+ }
+ .footer-pane{
+     padding: 55px 100px;
+     
  }
 
+ .copyright-pane{
+    background-color: #606952;
+    padding: 20px 0px 20px 100px;;
+ }
  .social-icons {
      text-align: end;
  }
@@ -487,6 +496,17 @@
      padding: 8px 12px;
      border-radius: 50%;
  }
+
+.footer-link{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.footer-link:hover{
+    color: #FFD08C;
 
  .copyright {
      text-align: left;
