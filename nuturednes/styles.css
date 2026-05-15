@@ -51,6 +51,7 @@
  .navbar-toggler:hover
   {
      border: none;
+     box-shadow: none;;
  }
 
  .navbar-collapse {
