@@ -12,11 +12,14 @@
 
  :root {
      --primary-color: #9DAF89;
-     --secondary-color: #f0f1ef;
+     --secondary-color: #F0F1EF;
      --accent-color: #ffd08c;
      --tetriary-color: #A59A88;
  }
 
+ .bg-1 {
+     background-color: var(--primary-color);
+ }
  .bg-2 {
      background-color: var(--secondary-color);
  }
@@ -54,6 +57,9 @@
      justify-content: end;
  }
 
+ .nav-link{
+    color: #000;
+ }
  .nav-link:hover {
      color: var(--accent-color);
  }
@@ -82,9 +88,9 @@
  }
 
  .hero-image{
-        background-image:url('./images/personal care on duty.jpeg');
-        background-size: fill; 
-        background-position:top 10% right 80%;
+        background-image:url('./images/personal\ care\ on\ duty.jpeg');
+        background-size:auto 100%; 
+        background-position:top 10% right 100%;
         background-repeat: no-repeat;
         min-height: 100%;
         overflow: hidden;
@@ -125,13 +131,14 @@
 
  /* BUTTONS */
  .btn-primary-custom {
-     background: #FFD08C;
+     background: var(--accent-color);
+     color: #000;
      border: none;
 
  }
 
  .btn-primary-custom:hover {
-     background-color: rgba(240, 164, 0, 0.883);
+     background-color: var(--accent-color);
      color: #fff;
  }
 
@@ -203,19 +210,13 @@
  }
 
  .feature-card img {
-     width: 100%;
      height: 200px;
      object-fit: cover;
      margin-bottom: 5px;
      border-radius: 16px;
  }
 
- /* GREEN SECTION */
- .green-section {
-     background: rgba(157, 175, 137, 0.45);
-     color: #2f2f2f;
- }
-
+ 
 
  .service-img {
      width: 80%;
@@ -365,32 +366,33 @@
      padding: 60px 0;
  }
 
- .form-control {
+.form-control {
      border: 1px solid var(--primary-color);
      background-color: transparent;
      color: var(--primary-color);
      padding: 12px 24px;
-     border-radius: 20px;
+     border-radius: 12px;
      outline: none;
  }
 
  .form-control::placeholder {
-     color: var(--primary-color);
+     color:#00000044;
      opacity: 1;
  }
 
  .form-control:focus {
      border-color: var(--primary-color);
-     color: #ffff;
+     color: #090909;
      box-shadow: 0 0 0 0.2rem rgba(255, 208, 140, 0.5);
      background-color: transparent;
+     outline: none;
 
  }
 
 
  .btn-contact {
-     background: #000000;
-     color: #ffffff;
+     background: var(--accent-color);
+     color: #000;
      border-radius: 16px;
      padding: 12px 26px;
  }
@@ -413,21 +415,27 @@
 
  .contact-context {
      padding: 0px 20px;
+     color: #fff;
  }
 
  .contact-icon i {
-     color: #ffffff;
+     color:white;
      font-weight: bold;
      width: 24px;
      height: 24px;
      border-width: 2px;
-     background-color: var(--primary-color);
+     background-color: var(--accent-color);
      padding: 8px 12px;
      border-radius: 50%;
  }
 
  .contact-info {
      text-transform: capitalize;
+ }
+
+ label{
+    color: #0000009a;
+     font-weight: 300;
  }
 
  /* FOOTER */
@@ -443,9 +451,11 @@
  }
 
  .copyright-pane{
-    background-color: var(--primary-color);
-     color: #fff;
-    padding: 16px 100px;
+    background-color:#000;
+   border-top: 1px solid #959494;
+    color: #fff;
+    font-size: 14px;
+    padding: 12px 100px;
     
  }
  .social-icons {
@@ -453,8 +463,8 @@
  }
 
  .footer-icon {
-     color: var(--primary-color);
-     background-color: rgb(255, 255, 254);
+     color: var(--accent-color);
+     background-color:#fff;
      padding: 8px 12px;
      border-radius: 50%;
  }
@@ -463,8 +473,8 @@
     font-weight: 300;}
 
  .footer-icon:hover {
-     color: #ffffff;
-     background-color: var(--primary-color);
+     color: #fff;
+     background-color: var(--accent-color);
      padding: 8px 12px;
      border-radius: 50%;
  }
@@ -501,6 +511,7 @@
 
  .about{
     display: flex;
+    justify-content: center;
  }
 
 
@@ -510,6 +521,7 @@
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100%;
+    
    
 }
  
@@ -637,9 +649,10 @@
      }
 
      .hero-image{
-        background-position:center;
-        background-size:auto 100%;
-        border-radius: 50px;
+        background-position:top;
+        background-size:auto 420px;
+        min-height: 420px;
+        border-radius: 50px 50px 0px 0px;
         clip-path:none;
         margin-top:20px;
      }

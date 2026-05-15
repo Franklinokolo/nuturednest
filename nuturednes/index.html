@@ -246,16 +246,16 @@
     <section class=" text-center section bg-2">
         <div class="col-12">
             <p><span class="section-top">Why Choose Us</span></p>
-            <p class="section-title">WHY FAMILIES CHOOSE US</p>
+            <h4 class="section-title">WHY FAMILIES CHOOSE US</h4>
 
             <p class="mb-5 small">
                 We understand that inviting care into your home is a big decision. That’s
                 why we focus on what matters most reliability, professionalism, and a genuine connection.
             </p>
 
-            <div class="row g-4 justify-content-center">
+            <div class="row g-4 justify-content-center align-item-center">
 
-                <div class="col-md-3 d-flex">
+                <div class="col-md-3">
                     <div class="feature-card card ">
                         <img src="./images/guiding a cleint on medication.jpeg"
                             alt="Carefully Selected And Trained Caregivers" class="card-img-top">
@@ -266,7 +266,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3  d-flex">
+                <div class="col-md-3 ">
                     <div class="feature-card card ">
                         <img src="./images/nuturednes caretaker folding tower.jpeg" alt="Personalized Care Plans"
                             class="card-img-top">
@@ -277,8 +277,8 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 d-flex">
-                    <div class="feature-card card  ">
+                <div class="col-md-3 ">
+                    <div class="feature-card card ">
                         <img src="./images/nuturednest care taking on a companion duty .jpeg" alt="Flexible Scheduling"
                             class="card-img-top">
                         <div class="card-body">
@@ -287,8 +287,8 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 d-flex">
-                    <div class="feature-card card  ">
+                <div class="col-md-3">
+                    <div class="feature-card card ">
                         <img src="./images/having a good time with a client.jpeg"
                             alt="Ongoing Communication And Support" class="card-img-top">
                         <div class="card-body">
@@ -302,15 +302,13 @@
     </section>
 
 <!-- ABOUT US -->
-     <section id="about" class=" ">
+     <section id="about" >
         <div class="col-12">
-          
+               <div class=" row about">
 
-            <div class=" row about  ">
-
-                <div class="col-md-8  section">
+                <div class="col-md-8 section">
                       <p class="align-center-md"><span class="section-top">About Us</span></p>
-                        <p class="section-title align-center-md">WHO WE ARE</p>
+                        <h2 class="section-title align-center-md">WHO WE ARE</h2>
 
             
 
@@ -321,7 +319,7 @@
                        <p>
                         Our approach is centered on providing consistent, dependable support that allows clients to remain safely and comfortably in their own homes. Every care plan is tailored, every caregiver is carefully selected, and every detail is intentional. 
                        </p>
-                       <p></p>
+                       <p>
                         We focus on creating an experience that feels both professional and personal where families feel confident in the care being provided, even when they’re not there. This isn’t just about assistance with daily living.  It’s about showing up with a standard of care that families can rely on every single time.
                        </p>
                     </div>
@@ -492,12 +490,12 @@
     </section>
 
     <!-- CONTACT -->
-    <section  class="section bg-2" id="contact">
+    <section  class="section bg-1" id="contact">
        
             <div class="row g-4 align-items-center">
 
                 <div class=" col-md-6 contact-context px-md-5">
-                    <h4 class="section-title ">CONTACT US</h4>
+                    <h4 class="section-title text-white">CONTACT US</h4>
                     
                     <div class="row contact-info-pane d-flex flex-column gap-0 ">
                         <p class="subtitle mb-4 ">
@@ -507,18 +505,21 @@
                         <div class="col-12 d-flex mb-1">
                             <div class="col-2 me-1"><span class="contact-icon"><i class="bi bi-phone"></i></span></div>
                             <div class="col-10">
+                                <p class="mb-0 fw-bold">Phone Number</p>
                                 <p class="contact-info">215-954-7041</p>
                             </div>
                         </div>
                         <div class="col-12 d-flex mb-1">
                             <div class="col-2 me-1 "><span class="contact-icon"><i class="bi bi-geo-alt"></i></span></div>
                             <div class="col-10">
+                                <p class="mb-0 fw-bold">Address</p>
                                 <p class="contact-info"> 150 Monument rd ste. 207 Bala cynwyd, pa 19004</p>
                             </div>
                         </div>
                         <div class="col-12 d-flex mb-1">
                             <div class="col-2 me-1 "><span class="contact-icon"><i class="bi bi-envelope"></i></span></div>
                             <div class="col-10">
+                                <p class="mb-0 fw-bold">E-mail Address</p>
                                 <p class="contact-info"> care@nuturednestcare.com</p>
                             </div>
                         </div>
@@ -526,18 +527,25 @@
                 </div>
 
                 <div class="col-md-6">
-                    <div class="form-pane">
-
+                    <div class="form-pane bg-white p-4 rounded-4 shadow-sm">
+                       <div class="col-12 mb-4">
+                         <p class="fs-3  mb-0">Send Us a Message</p>
+                        <p class="text-muted">We'll get back to you as soon as possible.</p>
+                       </div>
                         <form action="#">
-                            <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Name">
+                            <div class="mb-4">
+                                <label for="name">Full-Name</label>
+                                <input type="text" class="form-control" placeholder="your full name">
                             </div>
-                            <div class="mb-3">
-                                <input type="email" class="form-control" placeholder="Email">
+                            <div class="mb-4">
+                                <label for="email">Email</label>
+
+                                <input type="email" class="form-control " placeholder="example@gmai.com">
                             </div>
-                            <div class="mb-3">
-                                <textarea name="" id="" cols="30" rows="5" class="form-control"
-                                    placeholder="Message"></textarea>
+                            <div class="mb-4">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" cols="30" rows="5" class="form-control"
+                                    placeholder="Write a message"></textarea>
                             </div>
 
                             <button class="btn btn-contact col-12">Send Message</button>
@@ -550,7 +558,7 @@
     </section>
 
     <footer >
-        <div class="row  footer-pane d-flex  justify-content-between align-items-center g-3 ">
+        <div class="row  footer-pane d-flex  justify-content-between align-items-top g-3 ">
             <div class="col-md-8 ">
                 <div class="row">
                     <div class="col-md-auto">
@@ -558,7 +566,7 @@
                     </div>
                     <div class="col-md-8">
                       <div>
-                         <h5 class="section-title text-white fs-1">the nurtured nest</h5>
+                         <h5 class="section-title text-white" style="font-size: 28px;">the nurtured nest</h5>
                        <p class="footer-text" >
                             At The Nurtured Nest, we provide dependable in-home care designed around comfort, dignity, and trust. 
                             Our personalized support helps families feel confident 
@@ -567,10 +575,10 @@
                       </div>
                         <div class="icons mt-4">
                             
-                            <a href="#" class="footer-icon"><i class="bi bi-facebook"></i></a>
-                            <a href="#" class="footer-icon"><i class="bi bi-twitter"></i></a>
-                            <a href="#" class="footer-icon"><i class="bi bi-instagram"></i></a>
-                            <a href="https://youtu.be/iIu99bRjAjU" class="footer-icon"><i class="bi bi-youtube"></i></a>
+                            <a href="#" class="footer-icon me-2"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="footer-icon me-2"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="footer-icon me-2"><i class="bi bi-instagram"></i></a>
+                            <a href="https://youtu.be/iIu99bRjAjU" class="footer-icon me-2"><i class="bi bi-youtube"></i></a>
                         </div>
                     </div>
                 </div>
