@@ -11,8 +11,11 @@ testimonialCards.forEach(card => {
       defaultActiveCard.classList.remove("active");
       const starElement = card.querySelector(".stars");
       const quoteElement = card.querySelector(".quote");
-      starElement.style.color = "#fff";
-      quoteElement.style.color = "#fff"; 
+      const clientPositionElement = card.querySelector(".client-position");
+
+      starElement.style.color = " #ffd08c";
+      quoteElement.style.color = "#fff";
+      clientPositionElement.style.color = "#fff";
     }
     card.classList.add("active");
   });
@@ -23,8 +26,12 @@ testimonialCards.forEach(card => {
       defaultActiveCard.classList.add("active");
       const starElement = card.querySelector(".stars");
       const quoteElement = card.querySelector(".quote");
-      starElement.style.color = "#8a9b7a";
+      const clientPositionElement = card.querySelector(".client-position");
+      starElement.style.color = "#ffd08c";
       quoteElement.style.color = "#8a9b7a";
+      clientPositionElement.style.color = "#8a9b7a";
+
+
     }
   });
 });
