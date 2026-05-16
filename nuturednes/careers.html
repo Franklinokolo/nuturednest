@@ -62,16 +62,21 @@
 
         </div>
     </nav>
-   
- <!-- Careers -->
-    <section class="  section bg-2">
+
+<!-- breadcrums -->
+ <div class="col-12 py-4 section bg-2">
+    <h2>Career Detail</h2>
+ </div>
+    <!-- Careers -->
+
+    <section class="  section ">
         <div class="col-12">
           
 
-            <div class="row g-5 justify-content-center">
+            <div class="row g-2 justify-content-center">
 
-                <div class="col-md-6 pe-4">
-            <h1 class="section-title fs-2">JOIN OUR TEAM</h1>
+                <div class="col-md-8 text-start">
+                    <h1 class="section-title fs-2">JOIN OUR TEAM</h1>
 
                     <div class="career-text ">
                       <p>
@@ -81,26 +86,31 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 ">
+                <div class="col-md-8 ">
                     <div class="career-form-pane">
-                        <h2 class="text-dark my-3">APPLY FOR A POSITION</h2>
                         <form action="">
                             <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Full Name">
+                                <label for="fullname" class="mb-2">Full-Name</label>
+                                <input type="text"name='fullname' class="form-control" placeholder="Full Name">
                             </div>
                             <div class="mb-3">
-                                <input type="email" class="form-control" placeholder="Email">
+                                <label for="email" class="mb-2">E-mail</label>
+                                <input type="email" name="email" class="form-control" placeholder="Email">
                             </div>
                             <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Phone">
+                                <label for="phone" class="mb-2">Phone Number</label>
+                                <input type="text" name="phone" class="form-control" placeholder="Phone">
                             </div>
                             <div class="mb-3">
+                                <label for="position" class="mb-2">Position You are applying for</label>
                                 <input type="text" name="position" class="form-control" placeholder="Position Applying For">
                             </div>
                             <div class="mb-3">
-                                <input type="file" class="form-control" placeholder="Upload Resume">
+                                <label for="resume" class="mb-2">CV / Resume</label>
+                                <input type="file"name="resume" class="form-control" placeholder="Upload Resume">
                             </div>
-                            <div class="mb-3">
+                            <div class="mb-4">
+                                <label for="interest" class="mb-2">Tell us why you are interested in this position</label>
                                 <textarea name="" id="interest" cols="30" rows="5" class="form-control"
                                     placeholder="Why are you interested in this position?"></textarea>
                             </div>

@@ -91,7 +91,7 @@
  .hero-image{
         background-image:url('./images/personal\ care\ on\ duty.jpeg');
         background-size:auto 100%; 
-        background-position:top 10% right 100%;
+        background-position:top 10% left 20%;
         background-repeat: no-repeat;
         min-height: 100%;
         overflow: hidden;
