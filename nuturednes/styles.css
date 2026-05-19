@@ -31,6 +31,7 @@
 .alight-color{
  color : var(--accent-color);
 }
+
  /* TOP BAR */
  .top-bar {
      background: var(--tetriary-color);
@@ -728,6 +729,10 @@
 
     .copyright-pane {
         padding: 16px 40px;
+     }
+
+     .copytext{
+        order: 2;
      }
 
      
