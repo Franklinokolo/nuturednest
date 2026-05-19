@@ -24,11 +24,13 @@
      background-color: var(--secondary-color);
  }
 
-.S1{
+.s1{
  font-size:12px;
  font-weight:bold;
 }
-
+.alight-color{
+ color : var(--accent-color");
+}
  /* TOP BAR */
  .top-bar {
      background: var(--tetriary-color);
