@@ -24,6 +24,11 @@
      background-color: var(--secondary-color);
  }
 
+.S1{
+ font-size:12px;
+ font-weight:bold;
+}
+
  /* TOP BAR */
  .top-bar {
      background: var(--tetriary-color);
