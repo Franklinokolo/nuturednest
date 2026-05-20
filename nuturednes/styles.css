@@ -689,7 +689,8 @@
      }
 
      .img-holder{
-        order:1;
+      height: 400px;
+      order:1;
      }
 
      .cta {
