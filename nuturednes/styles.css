@@ -689,7 +689,7 @@
      }
 
      .img-holder{
-        display: none;
+        order:1;
      }
 
      .cta {
@@ -759,7 +759,7 @@
      }
 
      .img-holder {
-         display: none;
+         order : 1;
      }
      .hero p {
          font-size: 14px;
