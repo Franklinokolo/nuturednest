@@ -688,6 +688,12 @@
          height: auto;
      }
 
+     
+      .about {
+    flex-wrap: wrap-reverse;
+}
+     
+
      .img-holder{
       height: 400px;
       order:0;
