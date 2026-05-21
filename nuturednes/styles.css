@@ -534,6 +534,10 @@
     
    
 }
+
+.about-mobile-img{
+    display: none;
+}
  
 
  /* Careers page */
@@ -689,14 +693,19 @@
      }
 
      
-      .about {
-    flex-wrap: wrap-reverse;
-}
-     
+    
 
      .img-holder{
-      height: 400px;
-      order:0;
+      display: none;
+      
+     }
+
+     .about-mobile-img{
+        height: auto;
+        display: block;
+        width: 100%;
+        border-radius: 12px;
+        margin-bottom: 12px;
      }
 
      .cta {
