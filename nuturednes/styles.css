@@ -17,6 +17,12 @@
      --tetriary-color: #A59A88;
     
  }
+ .p-color{
+    color: var(--primary-color);
+ }
+ .bold{
+    font-weight: 600;
+ }
 
  .bg-1 {
      background-color: var(--primary-color);
@@ -529,7 +535,7 @@
 
 
 .img-holder{
-    background-size: cover;
+    background-size: 100% 95%;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100%;
